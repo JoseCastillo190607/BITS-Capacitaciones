@@ -1,0 +1,166 @@
+.admin{
+    flex: 4;
+    padding: 20px;
+}
+
+.adminTitle{
+    margin-left: 20px;
+}
+
+.adminTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adminAddButton{
+    width: 80px;
+    border: none;
+    background-color: #022338;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.adminContainer{
+    display: flex;
+    margin: 20px;
+}
+
+.adminShow{
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.14);
+}
+
+.adminUpDate{
+    flex: 2;
+    padding: 20px;
+    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.14);
+    margin-left: 20px;
+}
+
+.adminShowTop{
+    display: flex;
+    align-items: center;
+}
+
+.adminShowImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.adminShowTopTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.adminShowName{
+    font-weight: 600;
+}
+
+.adminShowAdminTitle{
+    font-weight: 300;
+}
+
+.adminShowButton{
+    margin-top: 20px;
+}
+
+.adminShowTitle{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.adminShowInfo{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #222222;
+}
+
+.adminShowIcon{
+    font-size: 16px !important;
+}
+
+.adminShowInfoTitle{
+    margin-left: 10px;
+}
+
+.adminUpDateTitle{
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.adminUpDateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.adminUpDateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.adminUpDateItem>label{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.adminUpDateInput{
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.adminUpDateRight{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.adminUpDateUpload{
+    display: flex;
+    align-items: center;
+}
+
+.adminUpDateImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 18px;
+}
+
+.adminUpDateIcon{
+    cursor: pointer;
+}
+
+.adminUpDateButton{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:  #022338;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin-right: 30px;
+}

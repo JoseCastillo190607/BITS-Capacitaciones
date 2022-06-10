@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Sidebar from "./components/sidebar/Sidebar";
+import Topbar from "./components/topbar/topbar";
+import "./app.css";
+import Home from "./pages/home/Home";
+import AdminList from "./pages/adminList/AdminList";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Admin from "./pages/admin/Admin";
+import NewAdmin from "./pages/newAdmin/NewAdmin";
+import CursosList from "./pages/cursosList/CursosList";
+import CursosMasDestacados from "./pages/cursosMasDestacados/CursosMasDestacados";
+import CursosMenosDestacados from "./pages/cursosMenosDestacados/CursosMenosDestacados";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+      <div>
+        <Topbar/>
+        <div className="container">
+          <Sidebar/>
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/adminList" element={<AdminList/>}/>
+              <Route path="/adminList/:adminId" element={<Admin/>}/>
+              <Route path="/newAdmins" element={<NewAdmin/>}/>
+              <Route path="/cursos" element={<CursosList/>}/>
+              <Route path="/cursos+Des" element={<CursosMasDestacados/>}/>
+              <Route path="/cursos-Des" element={<CursosMenosDestacados/>}/>
+            </Routes>
+        </div>
+      </div>
+      </BrowserRouter>
+
   );
 }
+
 
 export default App;

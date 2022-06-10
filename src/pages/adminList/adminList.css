@@ -1,0 +1,31 @@
+.adminList{
+flex: 4;
+}
+
+.adminListAdmin{
+    display: flex;
+    align-items: center;
+}
+
+.adminListImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+.adminListEdit{
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #11CA73;
+    color: white;
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+.adminListDelete{
+    color: #D31313;
+    cursor: pointer;
+}
