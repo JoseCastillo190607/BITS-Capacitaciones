@@ -11,11 +11,23 @@ import CursosList from "./pages/cursosList/CursosList";
 import CursosMasDestacados from "./pages/cursosMasDestacados/CursosMasDestacados";
 import CursosMenosDestacados from "./pages/cursosMenosDestacados/CursosMenosDestacados";
 import axios from "axios";
-import { Component, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const url="http://localhost:8080/API/usuarios"
+// const url="http://localhost:8080//usuarios"
 
 function App() {
+
+  const [load,setload] = useState ([]);
+
+
+  const loadData = () => {
+    axios.get('http://localhost:8080/api/usuarios/listar')
+    .then(res=>{
+      console.log(res.data)
+    })
+  }
+
+  useEffect(loadData, [load]);
 
   return (
       <BrowserRouter>
