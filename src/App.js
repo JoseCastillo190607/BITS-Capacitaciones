@@ -10,8 +10,13 @@ import NewAdmin from "./pages/newAdmin/NewAdmin";
 import CursosList from "./pages/cursosList/CursosList";
 import CursosMasDestacados from "./pages/cursosMasDestacados/CursosMasDestacados";
 import CursosMenosDestacados from "./pages/cursosMenosDestacados/CursosMenosDestacados";
+import axios from "axios";
+import { Component, useState } from "react";
+
+const url="http://localhost:8080/API/usuarios"
 
 function App() {
+
   return (
       <BrowserRouter>
       <div>

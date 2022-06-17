@@ -3,61 +3,111 @@ import './Featurecourses.css'
 import {ThumbDown, ThumbUp} from '@mui/icons-material';
 import {Link} from 'react-router-dom'
 export default function Featurecourses() {
+
+  const Button =({type}) => {
+    return <button className={"widgetLgButton " + type}>{type}</button>
+  }
+
   return (
     <div className='feature'>
-      
-      {/* <Link to="/cursos+Des" className='Link'>
-      <div className="featureItem">
-          <span className="featureTitle">+Destacados</span>
-        <div className="featureCursoContainer">
-            <span className="featureCurso">Cursos</span>
-            <span className="featureCursoRate">
-            Cursos<ThumbUp className='featureIcon positive'/>
-            </span>
-        </div>
-        
-        <span className="featureSub">Comparado la semana pasada</span>
-       
-       </div>
-       </Link>
-      */}
-      
-      {/* <div className="featureItem">
-          <span className="featureTitle">Comentarios</span>
-        <div className="featureCursoContainer">
-            <span className="featureCurso">Cursos</span>
-            <span className="featureCursoRate">
-            Cursos<ThumbUp/>
-            </span>
-        </div>
-        
-        <span className="featureSub">Comparado la semana pasada</span>
-      </div> */}
-     
      <div className="featureItem">
      <Link to="/cursos+Des" className='Link'>
-          <span className="featureTitle">+Destacados</span>
+          <span className="featureTitle">+Destacados</span></Link>
         <div className="featureCursoContainer">
             <span className="featureCurso">Cursos</span>
             <span className="featureCursoRate">
             Cursos<ThumbUp className='featureIcon positive'/>
             </span>
         </div>
-        <span className="featureSub">Comparado la semana pasada</span>
-      </Link>
+        <span className="featureCursoRate">Esta semana</span>
+
+        <span className="featureSub">
+           
+            <table className="widgetLgTable">
+           <tr className="widgetLgTr">
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Recursos Humanos</span>
+            </td>
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Gerencia</span>
+            </td>
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Gerencia</span>
+            </td>
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Recursos Humanos</span>
+            </td>
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Gerencia</span>
+            </td>
+          </tr>
+          </table>     
+        </span>
       </div>
 
       <div className="featureItem">
         <Link to="/cursos-Des" className='Link'>
-          <span className="featureTitle">-Destacados</span>
+          <span className="featureTitle">-Destacados</span></Link>
         <div className="featureCursoContainer">
             <span className="featureCurso">Cursos</span>
             <span className="featureCursoRate">
             Cursos<ThumbDown className='featureIcon negative'/>
-            </span>
+            </span>    
         </div>
-        <span className="featureSub">Comparado la semana pasada</span>
-      </Link>
+        <span className="featureCursoRate">Esta semana</span>
+        <span className="featureSub">
+        <table className="widgetLgTable">
+           <tr className="widgetLgTr">
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Gerencia</span>
+            </td>
+          </tr> 
+           <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Recursos Humanos</span>
+            </td>
+          </tr> 
+           <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Gerencia</span>
+            </td>
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Gerencia</span>
+            </td>
+          </tr>
+          <tr className="widgetLgTr">
+            <td className="widgetLgCourse">
+              <img src="https://orientacion.universia.net.co/imgs2011/imagenes/gerente2-2019_02_01_155717@2x.jpg" alt="" className="widgetLgImg" />
+              <span className="widgetLgName">Recursos Humanos</span>
+            </td>
+          </tr>
+           
+          </table> 
+        </span>
+      
       </div>
       
     </div>

@@ -38,7 +38,7 @@ export default function CursosList() {
             <td className="widgetLgDateIn"><ThumbDown className='featureIcon negative'/></td>
             <td className="widgetLgDateIn">2 junio 2022</td>
             <td className="widgetLgDateFn">20 junio 2022</td>
-            <td className="widgetLgStatus"><Button type="Eliminado"/></td>
+            <td className="widgetLgStatus"><Button type="Pendiente"/></td>
           </tr>
           <tr className="widgetLgTr">
             <td className="widgetLgUser">
